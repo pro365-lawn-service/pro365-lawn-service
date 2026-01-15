@@ -40,23 +40,18 @@ a{text-decoration:none;color:inherit}
     linear-gradient(180deg,#0b3d1d,#16a34a);
   color:#fff;
   text-align:center;
-  padding:60px 20px 70px;
-}
-
-.hero-header img{
-  max-width:220px;
-  margin-bottom:20px;
+  padding:70px 20px 80px;
 }
 
 .hero-header h1{
-  font-size:2.6rem;
+  font-size:3rem;
   margin:0;
-  letter-spacing:.5px;
+  letter-spacing:1px;
 }
 
 .hero-header p{
-  font-size:1.1rem;
-  margin:12px 0 24px;
+  font-size:1.15rem;
+  margin:14px 0 26px;
   opacity:.95;
 }
 
@@ -68,7 +63,7 @@ a{text-decoration:none;color:inherit}
 }
 
 .hero-actions a{
-  padding:14px 20px;
+  padding:14px 22px;
   border-radius:999px;
   font-weight:800;
   background:#fff;
@@ -81,18 +76,18 @@ a{text-decoration:none;color:inherit}
 }
 
 /* SECTIONS */
-section{padding:40px 0}
-h2{margin-top:0;font-size:1.7rem}
+section{padding:44px 0}
+h2{margin-top:0;font-size:1.8rem}
 
 .cards{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:18px;
+  gap:20px;
 }
 
 .card{
   background:var(--card);
-  padding:24px;
+  padding:26px;
   border-radius:var(--radius);
   box-shadow:var(--shadow);
 }
@@ -102,15 +97,16 @@ ul{padding-left:18px;color:var(--muted)}
 .form-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:18px;
+  gap:20px;
 }
 
 input,select,textarea{
   width:100%;
-  padding:12px;
-  margin-bottom:12px;
-  border-radius:12px;
+  padding:14px;
+  margin-bottom:14px;
+  border-radius:14px;
   border:1px solid #ccc;
+  font-size:1rem;
 }
 
 iframe{
@@ -124,13 +120,13 @@ footer{
   background:#0b3d1d;
   color:#fff;
   text-align:center;
-  padding:30px 20px;
+  padding:34px 20px;
 }
 
 /* MOBILE */
 @media(max-width:800px){
   .cards,.form-grid{grid-template-columns:1fr}
-  .hero-header h1{font-size:2.1rem}
+  .hero-header h1{font-size:2.3rem}
 }
 
 /* STICKY MOBILE QUOTE BUTTON */
@@ -145,9 +141,9 @@ footer{
     transform:translateX(-50%);
     background:linear-gradient(135deg,var(--green),var(--green-dark));
     color:#fff;
-    padding:14px 22px;
+    padding:14px 24px;
     border-radius:999px;
-    font-weight:800;
+    font-weight:900;
     box-shadow:0 12px 30px rgba(0,0,0,.35);
     z-index:9999;
   }
@@ -159,7 +155,6 @@ footer{
 
 <!-- HERO HEADER -->
 <div class="hero-header">
-  <img src="logo.png" alt="PRO365 Lawn Service Logo">
   <h1>PRO365 Lawn Service</h1>
   <p>Professional Lawn Care • Volusia County, Florida<br>Bilingual • English & Spanish</p>
 
@@ -196,10 +191,10 @@ footer{
   </div>
 </section>
 
-<section>
+<section id="quote">
   <h2>Request a Quote</h2>
 
-  <div class="form-grid" id="quote">
+  <div class="form-grid">
 
     <!-- EMAIL -->
     <div class="card">
